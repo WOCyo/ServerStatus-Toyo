@@ -118,19 +118,19 @@ function uptime() {
 			// Online4
 			if (result.servers[i].online4) {
 				TableRow.children["online4"].children[0].children[0].className = "progress-bar progress-bar-success";
-				TableRow.children["online4"].children[0].children[0].innerHTML = "<small>开启</small>";
+				TableRow.children["online4"].children[0].children[0].innerHTML = "<small>运行中</small>";
 			} else {
 				TableRow.children["online4"].children[0].children[0].className = "progress-bar progress-bar-danger";
-				TableRow.children["online4"].children[0].children[0].innerHTML = "<small>关闭</small>";
+				TableRow.children["online4"].children[0].children[0].innerHTML = "<small>维护中</small>";
 			}
 
 			// Online6
 			//if (result.servers[i].online6) {
 			//	TableRow.children["online6"].children[0].children[0].className = "progress-bar progress-bar-success";
-			//	TableRow.children["online6"].children[0].children[0].innerHTML = "<small>开启</small>";
+			//	TableRow.children["online6"].children[0].children[0].innerHTML = "<small>运行中</small>";
 			//} else {
 			//	TableRow.children["online6"].children[0].children[0].className = "progress-bar progress-bar-danger";
-			//	TableRow.children["online6"].children[0].children[0].innerHTML = "<small>关闭</small>";
+			//	TableRow.children["online6"].children[0].children[0].innerHTML = "<small>维护中</small>";
 			//}
 
 			// Name
@@ -152,13 +152,13 @@ function uptime() {
 					TableRow.children["traffic"].innerHTML = "–";
 					TableRow.children["cpu"].children[0].children[0].className = "progress-bar progress-bar-danger";
 					TableRow.children["cpu"].children[0].children[0].style.width = "100%";
-					TableRow.children["cpu"].children[0].children[0].innerHTML = "<small>关闭</small>";
+					TableRow.children["cpu"].children[0].children[0].innerHTML = "<small>维护中</small>";
 					TableRow.children["memory"].children[0].children[0].className = "progress-bar progress-bar-danger";
 					TableRow.children["memory"].children[0].children[0].style.width = "100%";
-					TableRow.children["memory"].children[0].children[0].innerHTML = "<small>关闭</small>";
+					TableRow.children["memory"].children[0].children[0].innerHTML = "<small>维护中</small>";
 					TableRow.children["hdd"].children[0].children[0].className = "progress-bar progress-bar-danger";
 					TableRow.children["hdd"].children[0].children[0].style.width = "100%";
-					TableRow.children["hdd"].children[0].children[0].innerHTML = "<small>关闭</small>";
+					TableRow.children["hdd"].children[0].children[0].innerHTML = "<small>维护中</small>";
 					if(ExpandRow.hasClass("in")) {
 						ExpandRow.collapse("hide");
 					}
